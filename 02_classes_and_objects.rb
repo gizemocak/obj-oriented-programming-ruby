@@ -1,8 +1,18 @@
 class GoodDog
-  def initialize
-    puts "This obj is initialized!"
+  def initialize(name)
+    @name = name #@name is an instance variable
+  end
+
+  def speak
+    "#{@name} says arf!"
   end
 end
 
-sparky = GoodDog.new #this obj was initialized
+sparky = GoodDog.new("Sparky") #this obj was initialized
+puts sparky.speak
+
+fido = GoodDog.new("Fido")
+puts fido.speak
+
+
 
