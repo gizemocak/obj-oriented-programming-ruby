@@ -1,15 +1,17 @@
 class GoodDog
+  attr_accessor :name #automatically creates getter and setter methods for us
+
   def initialize(name)
     @name = name #@name is an instance variable
   end
   
-  def get_name
-    @name
-  end  
+  # def name #renamed from get_name
+  #   @name
+  # end  
 
-  def set_name=(name)
-    @name = name 
-  end
+  # def name=(name) #renamed from set_name
+  #   @name = name 
+  # end
 
   def speak
     "#{@name} says arf!"
