@@ -16,4 +16,5 @@ end
 
 sparky = GoodDog.new("Sparky", 4)
 puts sparky.age             # => 28
-p sparky 
+p sparky  #p sparky is equivalent to puts sparky.inspect
+
