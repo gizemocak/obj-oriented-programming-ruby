@@ -17,5 +17,5 @@ class Cat < Mammal
 end
 
 class Dog < Mammal
-  include Swimmable     
+  include Swimmable   
 end
