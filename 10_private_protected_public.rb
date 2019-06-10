@@ -23,7 +23,22 @@ class GoodDog
   end
 end
 
-sparky = GoodDog.new("Sparky", 4)
-sparky.human_years
+# sparky = GoodDog.new("Sparky", 4)
+# sparky.human_years
 
 #private methods are not accessible outside of the class definition at all, and are only accessible from inside the class when called without self.
+
+class Animal
+  def a_public_method
+    "Will this work? " + self.a_protected_method
+  end
+
+  protected
+
+  def a_protected_method
+    "Yes, I'm protected!"
+  end
+end
+
+fido = Animal.new
+puts fido.a_public_method 
