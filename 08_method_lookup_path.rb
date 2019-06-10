@@ -27,6 +27,15 @@ end
 # puts "---Animal method lookup---"
 # puts Animal.ancestors
 
-fido = Animal.new
-puts fido.speak 
-puts fido.walk
+# fido = Animal.new
+# puts fido.speak 
+# puts fido.walk
+
+class GoodDog < Animal
+  include Swimmable
+  include Climbable
+end
+
+puts "---GoodDog method lookup---"
+puts GoodDog.ancestors
+
